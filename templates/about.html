@@ -1,0 +1,146 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'assets/images/favicon.png' %}" rel="icon" type="image/png">
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'assets/css/icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/uikit.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/tailwind.css' %}">
+
+</head>
+
+<body class="bg-gray-100">
+
+
+    <div id="wrapper" class="flex flex-col justify-between h-screen">
+
+        <!-- header-->
+        <div class="bg-white py-4 shadow dark:bg-gray-800">
+            <div class="max-w-6xl mx-auto">
+
+
+                <div class="flex items-center lg:justify-between justify-around">
+
+                    <a href="/signin">
+                       <b><h1 style="font-size: 2rem;">Creatmart</h1></b>
+                    </a>
+
+                    <div class="capitalize flex font-semibold hidden lg:block my-2 space-x-3 text-center text-sm">
+                        
+                        <a href="/signup" class="bg-pink-500 pink-500 px-6 py-3 rounded-md shadow text-white">Register</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Content-->
+        <div style="zoom:1.4">
+            <div class="lg:p-12 max-w-md max-w-xl lg:my-0 my-12 mx-auto p-6 space-y-">
+                <h1 class="lg:text-3xl text-center text-xl font-semibold  mb-6">About</h1>
+
+                
+                
+                <form action="" method="POST">
+                    <div class="text-center mt-5 space-x-2">
+                        <p class="text-base">Creatmart is a platform for content creators across all platforms to connect with the right brands for their audience. For brands, it serves
+                            as an effective method to find suitable content creatos for their advertising campaigns. It runs on a cutting-edge AI based recommendation engine, proving creators
+                            and brands alike with intelligent recommendations, suitable to their profiles and needs.
+                        </p>
+                    </div>
+
+                    <div class="text-center mt-5 space-x-2" style="margin-top: 100px;">
+                        <p class="text-base header">Team</p>
+                        <div class="text-base sub-header">Madhav<a href = "https://www.linkedin.com/in/madhav-singh-537a9521a" target="_blank" rel="noopener noreferrer"><span class="link-icon"></span></a>
+                            <div class="content">
+                                <div class="image" style="background-image: url(../../../media/profile_picture_Madhav.jpg)"></div>
+                            <div class="content-text"><span>Researcher and engineer with a passion to advance technology that improves lives </span></div>
+                        
+                        </div></div>
+                            
+                        <div class="text-base sub-header">Shirsak<a href = "https://www.linkedin.com/in/shirsaksahoo/" target="_blank" rel="noopener noreferrer"><span class="link-icon"></span></a>
+                            <div class="content">
+                                <div class="image" style="background-image: url(../../../media/profile_picture_shirsak.jpg); float:right"></div>
+                                <div class="content-text"><span>Artist and front-end ninja bringing elegant design right to your doorstep</span></div>
+                        
+                        </div></div>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+        
+        
+        <!-- Footer -->
+
+        <div class="lg:mb-5 py-3 uk-link-reset">
+            <div class="flex flex-col items-center justify-between lg:flex-row max-w-6xl mx-auto lg:space-y-0 space-y-3">
+                <div class="flex space-x-2 text-gray-700 uppercase">
+                </div>
+                <p class="capitalize"> © copyright 2022 by Creatmart</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--<script>
+        
+        (function (window, document, undefined) {
+            'use strict';
+            if (!('localStorage' in window)) return;
+            var nightMode = localStorage.getItem('gmtNightMode');
+            if (nightMode) {
+                document.documentElement.className += ' dark';
+            }
+        })(window, document);
+    
+    
+        (function (window, document, undefined) {
+    
+            'use strict';
+    
+            // Feature test
+            if (!('localStorage' in window)) return;
+    
+            // Get our newly insert toggle
+            var nightMode = document.querySelector('#night-mode');
+            if (!nightMode) return;
+    
+            // When clicked, toggle night mode on or off
+            nightMode.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.documentElement.classList.toggle('dark');
+                if (document.documentElement.classList.contains('dark')) {
+                    localStorage.setItem('gmtNightMode', true);
+                    return;
+                }
+                localStorage.removeItem('gmtNightMode');
+            }, false);
+    
+        })(window, document);
+    </script>-->
+
+    <!-- Scripts
+    ================================================== -->
+    <script src="{% static 'assets/js/tippy.all.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/uikit.js' %}"></script>
+    <script src="{% static 'assets/js/simplebar.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+
+</body>
+
+
+</html>
